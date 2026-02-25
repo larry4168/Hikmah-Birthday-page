@@ -498,7 +498,7 @@ setInterval(() => {
 }, 5000);
 
 // CIRCLE PHOTO SLIDESHOW
-let images = ["hikmah1.jpg", "hikmah2.jpg", "hikmah3.jpg"];
+let images = ["hikmah1.jpg", "hikmah2.jpg", "hikmah3.jpg", "hikmah4.jpg", "hikmah5.jpg", "hikmah6.jpg", "hikmah7.jpg", "hikmah8.jpg", "hikmah9.jpg", "hikmah10.jpg"];
 let index = 0;
 
 setInterval(() => {
@@ -597,12 +597,12 @@ class Confetti {
     }
 }
 
-for(let i = 0; i < 50; i++) {
+for(let i = 0; i < 20; i++) {
     confettiParticles.push(new Confetti());
 }
 
 function createConfettiBurst(x, y) {
-    for(let i = 0; i < 100; i++) {
+    for(let i = 0; i < 30; i++) {
         confettiParticles.push(new Confetti(x, y, true));
     }
 }
@@ -616,7 +616,7 @@ function animateConfetti() {
         particle.draw();
     });
     
-    if(Math.random() > 0.95 && confettiParticles.length < 150) {
+    if(Math.random() > 0.98 && confettiParticles.length < 150) {
         confettiParticles.push(new Confetti());
     }
     
